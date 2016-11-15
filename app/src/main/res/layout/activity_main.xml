@@ -7,8 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    >
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     >
+
 
     <Button
         android:id="@+id/test1"
@@ -45,6 +52,52 @@
         android:layout_weight="1"
         android:text="Test 5"
         />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <Button
+            android:id="@+id/test6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Test 6"
+            />
+        <Button
+            android:id="@+id/test7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Test 7"
+            />
+        <Button
+            android:id="@+id/test8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Test 8"
+            />
+        <Button
+            android:id="@+id/test9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Test 9"
+            />
+        <Button
+            android:id="@+id/test10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Test 10"
+            />
+    </LinearLayout>
 
     <!--<TextView-->
         <!--android:id="@+id/text"-->
