@@ -1,5 +1,6 @@
 package com.pereira.fatima.holdall;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,6 +24,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "ça marche", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        Button buttonPicasso = (Button) findViewById(R.id.test2);
+        buttonPicasso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PicassoActivity.class);
+                startActivity(intent);
+
             }
         });
 
