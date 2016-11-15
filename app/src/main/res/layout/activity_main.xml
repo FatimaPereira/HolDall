@@ -10,10 +10,10 @@
     >
 
     <Button
-        android:id="@+id/test"
+        android:id="@+id/test1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test"
+        android:text="Test1"
         />
 
     <!--<TextView-->
