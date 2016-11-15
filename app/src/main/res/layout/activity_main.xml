@@ -82,7 +82,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="#FF4081"
-            android:textColor="#0971B2"
+            android:textColor="#FFF"
             android:text="Test 8"
             />
         <Button
