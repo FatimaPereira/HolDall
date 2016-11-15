@@ -1,7 +1,9 @@
 package com.pereira.fatima.holdall;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,15 +14,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //cast : (TextView)
-        TextView textView = (TextView) findViewById(R.id.text);
-        textView.setText("Bonjour");
+//        TextView textView = (TextView) findViewById(R.id.text);
+//        textView.setText("Bonjour");
+
+        Button button = (Button) findViewById(R.id.test);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+
     }
+
 }
 
 
