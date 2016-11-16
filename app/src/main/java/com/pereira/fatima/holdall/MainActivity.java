@@ -53,6 +53,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//        Button btnColorPalindrone = (Button) findViewById(R.id.fab);
+//        buttonPalindrone.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // Envoyer vers une Activity = Intent
+//                Intent intent = new Intent(MainActivity.this, PalindromeActivity.class);
+//                startActivity(intent);
+//
+//            }
+//        });
+
     }
 
     @Override

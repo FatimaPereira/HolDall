@@ -5,6 +5,7 @@ package com.pereira.fatima.holdall;
  */
 
 public class ManagerPalindron {
+
     public boolean palindronWord(String word) {
         int letterCount = word.length();
         // indexD = index Descendant
@@ -22,4 +23,15 @@ public class ManagerPalindron {
         }
         return true;
     }
+
+    public String reverseWord(String word) {
+
+        StringBuffer result = new StringBuffer();
+        for (int index = 0; index<word.length(); index++ ) {
+            //word.charAt(index);
+            result.insert(0, word.charAt(index));
+        }
+        return result.toString();
+    }
+
 }
