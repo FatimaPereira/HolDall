@@ -50,7 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="List Cellules" />
+            android:text="List Cellules"
+            android:backgroundTint="#FF4081"/>
     </LinearLayout>
 
     <LinearLayout
@@ -80,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:backgroundTint="#FF4081"
+            android:backgroundTint="@color/colorGrey"
             android:text="Test 8"
             android:textColor="#FFF" />
 

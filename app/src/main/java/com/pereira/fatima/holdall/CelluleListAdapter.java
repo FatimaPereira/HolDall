@@ -1,15 +1,19 @@
 package com.pereira.fatima.holdall;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 /**
  * Created by Human Booster on 22/11/2016.
  */
 
 public class CelluleListAdapter extends BaseAdapter {
-
 
     @Override
     public int getCount() {
