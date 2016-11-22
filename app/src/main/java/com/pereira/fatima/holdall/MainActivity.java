@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button buttonListCellule = (Button) findViewById(R.id.test5);
+        Button buttonListCellule = (Button) findViewById(R.id.test4);
         buttonListCellule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,12 +64,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button buttonList = (Button) findViewById(R.id.test4);
+        Button buttonList = (Button) findViewById(R.id.test5);
         buttonList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Envoyer vers une Activity = Intent
-                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                Intent intent = new Intent(MainActivity.this, CelluleListActivity.class);
                 startActivity(intent);
 
             }
