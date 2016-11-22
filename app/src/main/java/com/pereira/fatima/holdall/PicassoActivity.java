@@ -6,8 +6,13 @@ package com.pereira.fatima.holdall;
 
         import com.squareup.picasso.Picasso;
 
+        import hugo.weaving.DebugLog;
+
 public class PicassoActivity extends AppCompatActivity {
 
+
+
+    @DebugLog
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,4 +29,6 @@ public class PicassoActivity extends AppCompatActivity {
 
 
     }
+
+
 }
