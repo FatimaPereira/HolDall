@@ -53,6 +53,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonListCellule = (Button) findViewById(R.id.test5);
+        buttonListCellule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Envoyer vers une Activity = Intent
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
         Button buttonList = (Button) findViewById(R.id.test4);
         buttonList.setOnClickListener(new View.OnClickListener() {
             @Override
