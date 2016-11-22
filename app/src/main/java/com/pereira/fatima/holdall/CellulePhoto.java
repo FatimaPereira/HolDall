@@ -8,7 +8,24 @@ import android.widget.TextView;
  */
 
 public class CellulePhoto {
-    public TextView titre;
-    public TextView sousTitre;
-    public ImageView imageView;
+    public static String titre;
+    public static String sousTitre;
+    //public static ImageView imageView;
+
+
+    public static String getTitre() {
+        return titre;
+    }
+
+    public static void setTitre(String titre) {
+        CellulePhoto.titre = titre;
+    }
+
+    public static String getSousTitre() {
+        return sousTitre;
+    }
+
+    public static void setSousTitre(String sousTitre) {
+        CellulePhoto.sousTitre = sousTitre;
+    }
 }
