@@ -8,24 +8,29 @@ import android.widget.TextView;
  */
 
 public class CellulePhoto {
-    public static String titre;
-    public static String sousTitre;
+    public String titre;
+    public String url;
     //public static ImageView imageView;
 
 
-    public static String getTitre() {
+    public CellulePhoto(String titre, String url) {
+        this.titre = titre;
+        this.url = url;
+    }
+
+    public String getTitre() {
         return titre;
     }
 
-    public static void setTitre(String titre) {
-        CellulePhoto.titre = titre;
+    public void setTitre(String titre) {
+        this.titre = titre;
     }
 
-    public static String getSousTitre() {
-        return sousTitre;
+    public String getUrl() {
+        return url;
     }
 
-    public static void setSousTitre(String sousTitre) {
-        CellulePhoto.sousTitre = sousTitre;
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

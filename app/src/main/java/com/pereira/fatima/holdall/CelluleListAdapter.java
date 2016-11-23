@@ -5,8 +5,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -15,6 +16,7 @@ import java.util.ArrayList;
  */
 
 public class CelluleListAdapter extends BaseAdapter {
+
 
     ArrayList<CellulePhoto> listCellules = new ArrayList<>();
 
@@ -43,12 +45,13 @@ public class CelluleListAdapter extends BaseAdapter {
                     .inflate(R.layout.row_cellule, parent, false);
         }
        TextView titreCellule = (TextView) convertView.findViewById(R.id.row_titre_cellule);
-        TextView soustitreCellule = (TextView) convertView.findViewById(R.id.row_soustitre_cellule);
-        //CellulePhoto.imageView = (ImageView) convertView.findViewById(R.id.image_cellule);
+       TextView urlCellule = (TextView) convertView.findViewById(R.id.row_soustitre_cellule);
+       ImageView imageCellule = (ImageView) convertView.findViewById(R.id.image_cellule);
 
 
-       titreCellule.setText(listCellules.get(i).getTitre());
-        soustitreCellule.setText(listCellules.get(i).getSousTitre());
+        titreCellule.setText(listCellules.get(i).getTitre());
+        urlCellule.setText(listCellules.get(i).getUrl());
+        Picasso.with(parent.getContext()).load(listCellules.get(i).getUrl()).resize(250,250).into(imageCellule);
 
         return convertView;
     }
