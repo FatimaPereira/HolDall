@@ -1,4 +1,4 @@
-package com.pereira.fatima.holdall;
+package com.pereira.fatima.holdall.version1.list;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,10 +6,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.pereira.fatima.holdall.R;
 
-import static com.pereira.fatima.holdall.R.id.list;
+import java.util.ArrayList;
 
 /**
  * Created by Human Booster on 22/11/2016.

@@ -1,11 +1,13 @@
-package com.pereira.fatima.holdall;
+package com.pereira.fatima.holdall.cellule.list;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.pereira.fatima.holdall.R;
 
 public class CelluleListActivity extends AppCompatActivity {
 
@@ -32,6 +34,20 @@ public class CelluleListActivity extends AppCompatActivity {
 
         listView.setAdapter(celluleListAdapter);
         celluleListAdapter.notifyDataSetChanged();
+
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(CelluleListActivity.this, FullScreenCelluleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
     }
 }

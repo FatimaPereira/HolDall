@@ -19,10 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PicassoActivity" />
-        <activity android:name=".PalindromeActivity" />
-        <activity android:name=".ListActivity" />
-        <activity android:name=".CelluleListActivity"></activity>
+        <activity android:name=".picasso.PicassoActivity" />
+        <activity android:name=".palindrome.PalindromeActivity" />
+        <activity android:name=".version1.list.ListActivity" />
+        <activity android:name=".cellule.list.CelluleListActivity" />
+        <activity android:name=".cellule.list.FullScreenCelluleActivity"></activity>
     </application>
 
 </manifest>

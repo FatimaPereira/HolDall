@@ -1,9 +1,10 @@
-package com.pereira.fatima.holdall;
+package com.pereira.fatima.holdall.picasso;
 
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.widget.ImageView;
 
+        import com.pereira.fatima.holdall.R;
         import com.squareup.picasso.Picasso;
 
         import hugo.weaving.DebugLog;

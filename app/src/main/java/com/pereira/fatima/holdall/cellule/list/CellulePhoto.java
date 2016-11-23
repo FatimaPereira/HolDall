@@ -1,4 +1,4 @@
-package com.pereira.fatima.holdall;
+package com.pereira.fatima.holdall.cellule.list;
 
 import android.widget.ImageView;
 import android.widget.TextView;

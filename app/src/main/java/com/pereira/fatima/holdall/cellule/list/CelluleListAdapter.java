@@ -1,5 +1,6 @@
-package com.pereira.fatima.holdall;
+package com.pereira.fatima.holdall.cellule.list;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.pereira.fatima.holdall.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -55,6 +57,10 @@ public class CelluleListAdapter extends BaseAdapter {
         urlCellule.setText(listCellules.get(i).getUrl());
         Picasso.with(parent.getContext()).load(listCellules.get(i).getUrl()).resize(250, 250).into(imageCellule);
 
+        // Pour mettre 2 boutons cliquables l'un sous l'autre
+        buttonResetCellule.setFocusable(false);
+        buttonResetCellule.setFocusableInTouchMode(false);
+
         buttonResetCellule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,6 +68,8 @@ public class CelluleListAdapter extends BaseAdapter {
                 notifyDataSetChanged();
             }
         });
+
+
 
         return convertView;
     }

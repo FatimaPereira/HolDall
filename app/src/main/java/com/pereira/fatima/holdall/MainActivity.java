@@ -5,8 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.pereira.fatima.holdall.cellule.list.CelluleListActivity;
+import com.pereira.fatima.holdall.cellule.list.FullScreenCelluleActivity;
+import com.pereira.fatima.holdall.palindrome.PalindromeActivity;
+import com.pereira.fatima.holdall.picasso.PicassoActivity;
+import com.pereira.fatima.holdall.version1.list.ListActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -75,11 +80,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Button buttonResetCellule = (Button) findViewById(R.id.test5);
-//        buttonResetCellule.setOnClickListener(new View.OnClickListener() {
+
+
+//        Button buttonEssai = (Button) findViewById(R.id.test6);
+//        buttonEssai.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, CelluleListActivity.class);
+//                Intent intent = new Intent(MainActivity.this, FullScreenCelluleActivity.class);
 //                startActivity(intent);
 //
 //            }

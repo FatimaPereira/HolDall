@@ -1,4 +1,4 @@
-package com.pereira.fatima.holdall;
+package com.pereira.fatima.holdall.palindrome;
 
 /**
  * Created by Human Booster on 16/11/2016.

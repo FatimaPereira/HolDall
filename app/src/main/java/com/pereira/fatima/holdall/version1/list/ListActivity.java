@@ -1,14 +1,10 @@
-package com.pereira.fatima.holdall;
+package com.pereira.fatima.holdall.version1.list;
 
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.util.ArrayList;
-
-import static android.R.id.list;
+import com.pereira.fatima.holdall.R;
 
 public class ListActivity extends AppCompatActivity {
 
