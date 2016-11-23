@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,7 +37,7 @@ public class CelluleListAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View convertView, ViewGroup parent) {
+    public View getView(final int i, View convertView, ViewGroup parent) {
         //convert view, view recyclée
         //Si la view est nulle, on la crée
         if (convertView == null) {
@@ -44,14 +45,23 @@ public class CelluleListAdapter extends BaseAdapter {
                     .from(parent.getContext())
                     .inflate(R.layout.row_cellule, parent, false);
         }
-       TextView titreCellule = (TextView) convertView.findViewById(R.id.row_titre_cellule);
-       TextView urlCellule = (TextView) convertView.findViewById(R.id.row_soustitre_cellule);
-       ImageView imageCellule = (ImageView) convertView.findViewById(R.id.image_cellule);
+        TextView titreCellule = (TextView) convertView.findViewById(R.id.row_titre_cellule);
+        TextView urlCellule = (TextView) convertView.findViewById(R.id.row_soustitre_cellule);
+        ImageView imageCellule = (ImageView) convertView.findViewById(R.id.image_cellule);
+        final Button buttonResetCellule = (Button) convertView.findViewById(R.id.row_btn_reset);
 
 
         titreCellule.setText(listCellules.get(i).getTitre());
         urlCellule.setText(listCellules.get(i).getUrl());
-        Picasso.with(parent.getContext()).load(listCellules.get(i).getUrl()).resize(250,250).into(imageCellule);
+        Picasso.with(parent.getContext()).load(listCellules.get(i).getUrl()).resize(250, 250).into(imageCellule);
+
+        buttonResetCellule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listCellules.remove(listCellules.get(i));
+                notifyDataSetChanged();
+            }
+        });
 
         return convertView;
     }

@@ -75,6 +75,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//        Button buttonResetCellule = (Button) findViewById(R.id.test5);
+//        buttonResetCellule.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, CelluleListActivity.class);
+//                startActivity(intent);
+//
+//            }
+//        });
+
 //        Button btnColorPalindrone = (Button) findViewById(R.id.fab);
 //        buttonPalindrone.setOnClickListener(new View.OnClickListener() {
 //            @Override

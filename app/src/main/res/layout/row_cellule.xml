@@ -6,29 +6,46 @@
     <ImageView
         android:id="@+id/image_cellule"
         android:layout_width="0dp"
-        android:layout_weight="3"
         android:layout_height="wrap_content"
-        android:background="@color/colorGrey"/>
+        android:layout_weight="3"
+        android:background="@color/colorGrey" />
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_weight="7"
         android:layout_height="wrap_content"
+        android:layout_weight="7"
         android:background="@color/colorGreen"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/row_titre_cellule"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Titre"
-            android:textAllCaps="true" />
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row_titre_cellule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="Titre"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/row_btn_reset"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top|end"
+                android:backgroundTint="@color/colorOrange"
+                android:text="x"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/row_soustitre_cellule"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sous Titre" />
+
+
     </LinearLayout>
 
 </LinearLayout>
