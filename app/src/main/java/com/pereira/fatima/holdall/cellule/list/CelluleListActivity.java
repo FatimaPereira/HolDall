@@ -1,6 +1,7 @@
 package com.pereira.fatima.holdall.cellule.list;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,9 +10,12 @@ import android.widget.ListView;
 
 import com.pereira.fatima.holdall.R;
 
+import java.util.ArrayList;
+
 public class CelluleListActivity extends AppCompatActivity {
 
     CelluleListAdapter celluleListAdapter = new CelluleListAdapter();
+    ArrayList<CellulePhoto> listCellules = new ArrayList<>();
 
     ListView listView;
 
@@ -35,19 +39,19 @@ public class CelluleListActivity extends AppCompatActivity {
         listView.setAdapter(celluleListAdapter);
         celluleListAdapter.notifyDataSetChanged();
 
-
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                CellulePhoto image = (CellulePhoto) celluleListAdapter.getItem(i);
+                String title = image.getTitre();
+                String url = image.getUrl();
                 Intent intent = new Intent(CelluleListActivity.this, FullScreenCelluleActivity.class);
+                intent.putExtra("Title",title);
+                intent.putExtra("Url",url);
                 startActivity(intent);
             }
         });
-
-
-
-
 
     }
 }

@@ -69,8 +69,6 @@ public class CelluleListAdapter extends BaseAdapter {
             }
         });
 
-
-
         return convertView;
     }
 }
